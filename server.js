@@ -11,10 +11,8 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host : 'postgresql-objective-38697', //heroku database
-    user : 'postgres',
-    password : '',
-    database : 'smartbrain'
+    host : process.env.DATABASE_URL, //heroku database
+    ssl: true
   }
 });
 
