@@ -1,3 +1,3 @@
 # face-detection-api
 
-Database for face detection api.
+Server for face detection api.
